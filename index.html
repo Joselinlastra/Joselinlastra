@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" type="text/css" href="datatables/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="datatables/datatables-1.10.18/css/datatables.bootstrap4.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<header>
+		<h4 class="text-center text-light"><span class="badge badge-primary">FARMACIA</span></h4>
+	</header> 
+
+	<div class="container"> 
+		<div class="row">
+			<div class="col-lg-12">
+				<button id="btnNuevo" class="btn btn-success">Nuevo</button>
+			</div>
+		</div>
+	</div>
+	<div class="container"> 
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="table-responsive">
+					<table class="table-striped table-bordered table-condensed" style="width:100%">
+					<thead class="text-center">
+						<tr>
+							<th>Codigo</th><th>Productos</th><th>Stock</th><th>Precio</th><th>Codigo</th><th>Codigo</th>
+						</tr>
+						
+					</thead>
+					<tbody>
+						<tr>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th>
+								<div class="text-center">
+									<div class="btn-group">
+										<button  class="btn btn-primary">Editar</button>
+										<button class="btn btn-danger">Borrar</button>
+									</div>
+								</div>
+							</th>
+
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="moldal" tabindex="-1" role="dialog" aria-labelledby="modallabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="moal-content">
+				<div modal-header>
+					<h1 class="modal-title" id="modal"></h1>
+					<button type="button" class="close" data-disniss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+				</div>
+			<form id="form">
+				<div class="modal-body">
+					<div class="form-group">
+					<label for="codigo" class="col-form-label">Codigo</label>
+					<input type="text" class="form-control" id="codigo">
+					</div>
+					<div class="form-group">
+					<label for="productos" class="col-form-label">Productos</label>
+					<input type="text" class="form-control" id="productos">
+					</div>
+					<div class="form-group">
+					<label for="stock" class="col-form-label">Stock</label>
+					<input type="text" class="form-control" id="stock">
+					</div>
+					<div class="form-group">
+					<label for="precio" class="col-form-label">Precio</label>
+					<input type="text" class="form-control" id="precio">
+					</div>
+					<div class="form-group">
+					<label for="codigo" class="col-form-label">Codigo</label>
+					<input type="text" class="form-control" id="codigo">
+					</div>
+					<div class="form-group">
+					<label for="codigo" class="col-form-label">Marca</label>
+					<input type="text" class="form-control" id="codigo">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+					<button type="submit" class="btn btn-dark" data-dismiss="modal">Guardar</button>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+	<script src="jquery/jquery-3.3.1.min.js" ></script>
+	<script src="popper/popper.min.js" ></script>
+	<script src="bootstrap/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="datatables/datatables.min.js"></script>
+	<script type="text/javascript" src="min.js"></script>
+</body>
+</html>
